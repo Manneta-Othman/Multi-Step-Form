@@ -13,16 +13,16 @@ export function Address({data, updateData}:DataProps) {
               <input type="text" id="street" value={data.street} onChange={e => updateData({street: e.target.value})}/>
             </div>
             <div className="city">
-              <label htmlFor="city">City</label>
-              <input type="text" id="city" value={data.city} onChange={e => updateData({city: e.target.value})}/>
+              <label htmlFor="city">City*</label>
+              <input type="text" required id="city" value={data.city} onChange={e => updateData({city: e.target.value})}/>
             </div>
             <div className="state">
-              <label htmlFor="state">State</label>
-              <input type="text" id="state" value={data.state} onChange={e => updateData({state: e.target.value})}/>
+              <label htmlFor="state">State*</label>
+              <input type="text" required id="state" value={data.state} onChange={e => updateData({state: e.target.value})}/>
             </div>
             <div className="zip">
-              <label htmlFor="zip">Zip Code</label>
-              <input type="number" id="zip" value={data.zip} onChange={e => updateData({zip: e.target.value})}/>
+              <label htmlFor="zip">Zip Code*</label>
+              <input type="number" required id="zip" value={data.zip} onChange={e => updateData({zip: e.target.value})}/>
             </div>
           </>
         );
