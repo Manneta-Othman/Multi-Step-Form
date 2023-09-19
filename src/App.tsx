@@ -32,7 +32,7 @@ const InitialData:FormData = {
 function App() {
 
   const [data, setData] = useState(InitialData)
-
+//grab variables and functions from useMultiStepsForm and send HtmlElements as props
   const {steps, currentStepIndex, step, isFirstStep, isLastStep, back, next, goto} = 
   useMultiStepsForm([
     <UserForm data={data} updateData={updateData}/>,
